@@ -1,13 +1,15 @@
 import './App.css';
-import Bill from './Bill';
+import Bill from './components/Bill';
+import SelectTip from './components/SelectTip';
+import NumberOfPeople from './components/NumberOfPeople';
 
 function App() {
     return (
         <section id="calculator">
             <div>
                 <Bill />
-                <div>Select Tip</div>
-                <div>Number</div>
+                <SelectTip />
+                <NumberOfPeople />
             </div>
             <div>
                 <div>Tip Amount</div>
