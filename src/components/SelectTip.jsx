@@ -1,9 +1,6 @@
-const SelectTip = () => {
-    let percent = 0
-
+const SelectTip = ({setPercentAtual}) => {
     const ChangePercent = (evt) => {
-        percent = Number(evt.target.value) / 100
-        console.log(percent)
+        setPercentAtual(Number(evt.target.value) / 100)
     };
 
     return (
@@ -13,7 +10,7 @@ const SelectTip = () => {
             <button onClick={ChangePercent} value="10">10%</button>
             <button onClick={ChangePercent} value="15">15%</button>
             <button onClick={ChangePercent} value="25">25%</button>
-            <button onClick={ChangePercent} value="5">50%</button>
+            <button onClick={ChangePercent} value="50">50%</button>
             <input type="text" placeholder="Custom" onInput={ChangePercent}/>
         </div>
     );
