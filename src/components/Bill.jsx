@@ -1,3 +1,4 @@
+import './Bill.css'
 import { ReactComponent as Dollar } from '../images/icon-dollar.svg'
 
 const Bill = ({inputBill, setInputBill}) => {
@@ -5,7 +6,7 @@ const Bill = ({inputBill, setInputBill}) => {
         <div id='bill'>
             <small>Bill</small>
             <div>
-                <Dollar/>
+                <Dollar />
                 <input type="text" placeholder="0" value={inputBill} 
                 onChange={(evt) => {
                     setInputBill(evt.target.value)

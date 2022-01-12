@@ -15,12 +15,12 @@ function App() {
 
     return (
         <section id="calculator">
-            <div>
+            <div className='box'>
                 <Bill setInputBill={setInputBill}/>
                 <SelectTip setPercentAtual={setPercentAtual} />
                 <NumberOfPeople setNumberOfPeople={setNumberOfPeople}/>
             </div>
-            <div>
+            <div className='box' id='boxDireita'>
                 <TipAmount  inputBill={inputBill} 
                             percentAtual={percentAtual}
                             numberOfPeople={numberOfPeople}/>
