@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './reset.css'
 import './App.css';
 import Bill from './components/Bill';
 import SelectTip from './components/SelectTip';
@@ -28,10 +29,10 @@ function App() {
                         calculoTotal={calculoTotal}
                         inputBill={inputBill}
                 />
-                <button onClick={() => {
+                <button id='reset' onClick={() => {
                     setInputBill(0)
                     setCalculoTotal(0)
-                }}>Reset</button>
+                }}>RESET</button>
             </div>
         </section>
     );

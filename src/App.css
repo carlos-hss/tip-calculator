@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+#calculator {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator div {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reset {
+    width: 80%;
+    height: 40px;
+    border: 2px solid #26c2ad;
+    border-radius: 5px;
+    background-color: #26c2ad;
+    font-weight: bold;
+    color: #00474b;
+}

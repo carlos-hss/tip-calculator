@@ -1,7 +1,7 @@
 const TipAmount = ({percentAtual, inputBill, numberOfPeople}) => {
-    console.log(percentAtual)
-    console.log(inputBill)
-    console.log(numberOfPeople)
+    percentAtual = Number(percentAtual)
+    inputBill = Number(inputBill)
+    numberOfPeople = Number(numberOfPeople)
 
     return (
         <div>
@@ -9,8 +9,8 @@ const TipAmount = ({percentAtual, inputBill, numberOfPeople}) => {
                 <p>Tip Amount</p>
                 <small>/ person</small>
             </div>
-            <h2>{   (Number(percentAtual) !== 0 && Number(inputBill) !== 0 && Number(numberOfPeople) >= 1) ?
-                    (Number(percentAtual) * Number(inputBill)) / Number(numberOfPeople) : 0
+            <h2>{   (percentAtual !== 0 && inputBill !== 0 && numberOfPeople >= 1) ?
+                    (percentAtual * inputBill) / numberOfPeople : 0
                 }</h2>
         </div>
     )
